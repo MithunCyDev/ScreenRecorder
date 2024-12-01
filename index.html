@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="https://github.com/Mithuncydev" class="developer"
+      >Developer->MithunCy</a
+    >
+    <div class="header">
+      <h1>Screen Recorder</h1>
+    </div>
+
+    <div class="container">
+      <select id="resolution">
+        <option value="480p">480p</option>
+        <option value="720p">720p</option>
+        <option value="1080p">1080p</option>
+      </select>
+
+      <div class="buttonsContainer">
+        <button id="start">Start Recording</button>
+        <button id="stop" disabled>Stop Recording</button>
+      </div>
+    </div>
+
+    <video class="preview" id="preview" controls autoplay></video>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
